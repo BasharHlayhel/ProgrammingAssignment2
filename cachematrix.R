@@ -1,4 +1,8 @@
+#it decreases computation time by caching data
+#there are two functions and each have a specific role
 
+
+#this function cache the data
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
@@ -13,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-
+#this function checks whether there is a cached data
+#and calculate the inverse if no cache data is there
 
 cacheSolve <- function(x, ...) {
        
